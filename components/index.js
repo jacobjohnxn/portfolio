@@ -1,3 +1,4 @@
+
 var typed = new Typed(".typing", {
   strings: [
     "",
@@ -29,3 +30,44 @@ document
       }
     );
   });
+
+  gsap.to('.box', {
+    scrollTrigger: {
+        trigger:'.box',
+        // start :'top center',
+        markers:true,
+        toggleActions:"restart pause restart restart"
+    },
+    x:100,
+    y:20,
+    duration:3
+});
+
+gsap.to('.secbox', {
+    scrollTrigger: {
+        trigger:'.secbox',
+        // start :'top center',
+        markers:true,
+        toggleActions:"restart pause restart restart"
+    },
+    x:50,
+    duration:3
+});
+gsap.set('.skillleft', { x: -300 });
+gsap.to('.skillleft', {
+  scrollTrigger: {
+      trigger:'.skillleft',
+      toggleActions:"restart pause restart restart"
+  },
+  x:0,
+  duration:1
+});
+gsap.set('.skillright', { x: 300 });
+gsap.to('.skillright', {
+  scrollTrigger: {
+      trigger:'.skillright',
+      toggleActions:"restart pause restart restart"
+  },
+  x:0,
+  duration:1
+});
