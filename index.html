@@ -8,6 +8,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+            referrerpolicy="no-referrer"></script>
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 </head>
 
 <body>
@@ -104,22 +108,7 @@
             </div>
         </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
-            referrerpolicy="no-referrer"></script>
-        <script>
-            var typed = new Typed(".typing", {
-                strings: [
-                    "",
-                    "FullStack Developer,",
-                    "Frontend Developer,",
-                    "Backend Developer,",
-                    "Mobile Apps Developer.",
-                ],
-                typeSpeed: 100,
-                BackSpeed: 60,
-                loop: true,
-            });
-        </script>
+        
     </section>
     <section id="education" class="py-12 bg-gray-50 pt-16 h-screen">
         <h1 class="text-center lg:text-5xl sm:text-4xl font-extrabold text-gray-800 mb-12">
@@ -400,13 +389,7 @@
                     <a href="https://www.instagram.com/jacobjohnxn/" target="_blank" class="hover:underline">Instagram</a>
                 </div>
     
-                <!-- Twitter (Commented out) -->
-                <!-- <div class="flex items-center mt-4 space-x-3 text-black">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M23 3.5a10.13 10.13 0 01-2.88.79 4.988 4.988 0 002.2-2.72 9.967 9.967 0 01-3.15 1.2A4.95 4.95 0 0016.615 2c-2.73 0-4.947 2.204-4.947 4.92 0 .387.045.762.13 1.123A14.03 14.03 0 011.64 3.15a4.868 4.868 0 00-.666 2.476c0 1.708.872 3.215 2.18 4.096a4.932 4.932 0 01-2.244-.614v.062c0 2.386 1.71 4.374 3.972 4.83a4.955 4.955 0 01-2.233.084c.63 1.937 2.455 3.33 4.607 3.364A9.92 9.92 0 010 20.65 13.91 13.91 0 007.548 22c9.055 0 14.004-7.418 14.004-13.856 0-.21-.004-.418-.015-.624A9.916 9.916 0 0023 3.5z"></path>
-                    </svg>
-                    <a href="https://twitter.com/yourusername" target="_blank" class="hover:underline">Twitter</a>
-                </div> -->
+                
             </div>
 
 
@@ -429,31 +412,11 @@
                         class="w-full py-3 font-semibold text-white bg-purple-500 rounded-md hover:bg-purple-800 focus:outline-none focus:ring-2 ring-gray-200">
                         Send Message
                     </button>
-                </form>
-                
-                <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-                <script type="text/javascript">
-                    (function() {
-                        emailjs.init("S0eaM96pWAltfGWm1");  // Replace with your EmailJS user ID
-                    })();
-                
-                    document.getElementById('contact-form').addEventListener('submit', function(event) {
-                        event.preventDefault();
-                
-                        emailjs.sendForm('service_p5cy2di', 'template_cycqa9d', this)
-                            .then(function() {
-                                alert('Message sent!');
-                            }, function(error) {
-                                alert('Failed to send message: ' + JSON.stringify(error));
-                            });
-                    });
-                </script>
-                
-                
+                </form>           
             </div>
         </div>
     </section>
-    
+    <script src="./components/index.js"></script>
 </body>
 
 </html>
