@@ -1,0 +1,30 @@
+                #menu-toggle:checked+#menu {
+                    display: block;
+                }
+
+                @media (max-width: 768px) {
+                    #menu {
+                        display: none;
+                    }
+
+                    #menu-toggle:checked~#menu {
+                        display: block;
+                    }
+                }
+                #home {
+    overflow: hidden; /* Add this */
+}
+#education {
+    overflow: hidden; /* Add this */
+}
+#skill {
+    overflow: hidden; /* Add this */
+}
+.carousel-item {
+    transition: opacity 0.5s ease-in-out; /* Adjust duration and easing as needed */
+    opacity: 0; /* Start hidden */
+}
+
+.carousel-item.block {
+    opacity: 1; /* Fade in when active */
+}
