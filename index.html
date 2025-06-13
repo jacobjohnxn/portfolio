@@ -96,9 +96,9 @@
                         <span class="typing text-green-500 dark:text-green-700">fullstack developer</span>
                     </h3>
                     <p>
-                        Currently a final-year BTech student in Computer Science (Data
-                        Science) with expertise in HTML, PHP, Android Studio, and some
-                        experience with Flutter..
+                        Iam a BTech graduate in Computer Science (Data
+                        Science) with expertise in HTML, python, excel and some
+                        experience with Andrioid studio and Flutter..
                     </p>
                     <div class="box sm:mt-4 xs:mt-2">
                         <button
@@ -124,8 +124,8 @@
                 B.Tech in Computer Science (Data Science)
             </p>
             <p class="text-base text-gray-600 mb-1">SCMS College of Engineering</p>
-            <p class="text-base text-gray-600 mb-1">Graduating June 2025</p>
-            <p class="text-base font-semibold text-gray-800">CGPA: 8.26</p>
+            <p class="text-base text-gray-600 mb-1">Graduated May 2025</p>
+            <p class="text-base font-semibold text-gray-800">CGPA: 8.46</p>
         </div>
         <div class="secbox max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
             <p class="text-lg font-medium text-gray-700 mb-1">High School</p>
@@ -162,6 +162,8 @@
                 </h2>
                 <ul class="list-disc list-inside text-gray-600">
                     <li>HTML/CSS</li>
+                    <li>Excel</li>
+                    <li>Python</li>
                     <li>Php</li>
                     <li>Tailwind CSS</li>
                     <!-- <li>Node.js</li> -->
@@ -220,6 +222,28 @@
     <section id="projects" class="bg-gray-50 h-full pt-16 pb-4">
         <h1 class="text-center lg:text-5xl sm:text-4xl font-extrabold text-black mb-12">My Works</h1>
         <div class="carousel w-full">
+
+            <div id="slide0" class="carousel-item relative w-full hidden">
+                <div class="card w-[32rem] h-[30rem] bg-white shadow-xl text-black mx-auto">
+                    <figure class="px-10 pt-10">
+                        <img src="./img/violation.png" alt="" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">AI Violation Detection using YOLOv8</h2>
+                        <p>My final year project where i created a Traffic Violation detection system using YOLOv8 that can detect no helmel,license plate etc</p>
+                        <div class="card-actions">
+                            <div class="badge badge-outline">YOLOv8</div>
+                            <div class="badge badge-outline">Cloud</div>
+                            <div class="badge badge-outline">Python</div>
+                        </div>
+                        <a href="https://github.com/jacobjohnxn/vehicle-ai-violation-detection" class="btn btn-primary mt-4">Visit</a>
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <button class="btn btn-circle" onclick="moveToSlide(5)">❮</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(1)">❯</button>
+                </div>
+            </div>
             <!-- Slide 1 -->
             <div id="slide1" class="carousel-item relative w-full text-black block">
                 <div class="card w-[32rem] h-[30rem] bg-white shadow-xl mx-auto">
@@ -238,8 +262,8 @@
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <button class="btn btn-circle" onclick="moveToSlide(4)">❮</button>
-                    <button class="btn btn-circle" onclick="moveToSlide(1)">❯</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(0)">❮</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(2)">❯</button>
                 </div>
             </div>
     
@@ -261,8 +285,8 @@
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <button class="btn btn-circle" onclick="moveToSlide(0)">❮</button>
-                    <button class="btn btn-circle" onclick="moveToSlide(2)">❯</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(1)">❮</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(3)">❯</button>
                 </div>
             </div>
     
@@ -285,8 +309,8 @@
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <button class="btn btn-circle" onclick="moveToSlide(1)">❮</button>
-                    <button class="btn btn-circle" onclick="moveToSlide(3)">❯</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(2)">❮</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(4)">❯</button>
                 </div>
             </div>
     
@@ -309,8 +333,8 @@
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <button class="btn btn-circle" onclick="moveToSlide(2)">❮</button>
-                    <button class="btn btn-circle" onclick="moveToSlide(4)">❯</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(3)">❮</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(5)">❯</button>
                 </div>
             </div>
     
@@ -333,7 +357,7 @@
                     </div>
                 </div>
                 <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <button class="btn btn-circle" onclick="moveToSlide(3)">❮</button>
+                    <button class="btn btn-circle" onclick="moveToSlide(4)">❮</button>
                     <button class="btn btn-circle" onclick="moveToSlide(0)">❯</button>
                 </div>
             </div>
